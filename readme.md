@@ -65,10 +65,16 @@ $ . venv/bin/activate
 (venv) $ python3 device_measurement.py -h
 
 # display rplidar measurements (Linux)
-(venv) $ python3 device_measurement.py '/dev/ttyUSB0'
+(venv) $ python3 device_measurement.py /dev/ttyUSB0
 
 # display rplidar measurements without any other output (macOS)
 (venv) $ python3 device_measurement.py /dev/tty.usbserial-0001 --raw
+
+# forward rplidar measurements to file (Linux)
+(venv) $ python3 device_measurement.py /dev/ttyUSB0 --raw >> output.txt
+
+# forward rplidar measurements to file and output in the terminal (macOS)
+(venv) python3 device_measurement.py /dev/tty.usbserial-0001 --raw | tee output.txt
 ```
 
 **Stop virtualenv**
