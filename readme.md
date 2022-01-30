@@ -1,5 +1,11 @@
 # RPLidar A1M8
 
+**:point_right: Very Important :point_left:**
+
+You can adapt, improve and use the code for your projects as you wish. The author of this repository take no responsibility for your use or misuse or any damage on your devices!
+
+## Information
+
 The Python3 scripts for [RPLIDAR A1](https://www.slamtec.com/en/Lidar/A1) run on Linux, macOS and Windows. Latest rplidar documentation can be found [here](https://rplidar.readthedocs.io/en/latest/).
 
 Examples:
