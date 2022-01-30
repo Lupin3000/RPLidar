@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 import argparse
-from rplidar import RPLidar
 import time
 from os import path
+
+from rplidar import RPLidar
 
 BAUDRATE: int = 115200
 TIMEOUT: int = 1
