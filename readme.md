@@ -1,6 +1,6 @@
 # RPLidar A1M8
 
-The Python3 scripts for [RPLIDAR A1](https://www.slamtec.com/en/Lidar/A1) run on Linux, macOS and Windows.
+The Python3 scripts for [RPLIDAR A1](https://www.slamtec.com/en/Lidar/A1) run on Linux, macOS and Windows. Latest rplidar documentation can be found [here](https://rplidar.readthedocs.io/en/latest/).
 
 Examples:
 
