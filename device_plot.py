@@ -6,8 +6,8 @@ from platform import system
 
 import matplotlib.animation as animation
 import matplotlib.pyplot as plt
-from matplotlib import use
 import numpy as np
+from matplotlib import use
 from rplidar import RPLidar
 
 BAUDRATE: int = 115200
