@@ -1,5 +1,13 @@
 # RPLidar A1M8
 
+The Python3 scripts run on Linux, macOS and Windows.
+
+Examples:
+
+- COM3 (_Windows_)
+- /dev/ttyUSB0 (_Linux_)
+- /dev/tty.usbserial-0001 (_macOS_)
+
 ## Setup
 
 **Clone Repository**
@@ -13,6 +21,8 @@ $ cd RPLidar/
 ```
 
 **Create virtualenv (_for Python 3.x_)**
+
+> The use of virtualenv is not mandatory but recommended.
 
 ```shell
 # create virtualenv
@@ -62,7 +72,7 @@ $ . venv/bin/activate
 
 ## Error
 
-> Depending on the rights settings, there may be problems with reading rights under Linux. Following quick and dirty solution can help.
+> Root privilege is needed to access the ttyUSB device under Linux. Following quick and dirty solution can help or add KERNEL=="ttyUSB*", MODE="0666" to the configuration of udev, and reboot.
 
 ```shell
 # list device and permissions
