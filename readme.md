@@ -96,6 +96,16 @@ $ . venv/bin/activate
 (venv) $ python3 device_measurement.py /dev/tty.usbserial-0001 --raw | tee output.txt
 ```
 
+**Plot Measurements**
+
+```shell
+# show script help
+(venv) $ python3 device_plot.py -h
+
+# output rplidar measurements as plot (macOS)
+(venv) $ python3 device_plot.py /dev/tty.usbserial-0001
+```
+
 **Stop virtualenv**
 
 ```shell
