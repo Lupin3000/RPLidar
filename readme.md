@@ -145,7 +145,9 @@ $ sudo chmod 0666 /dev/ttyUSB0
 
 **PyCharm**
 
-> Some IDE like PyCharm show the problem "Unsatisfied package requirement inspection" because in file `requirements.txt` is written `rplidar-roboticia` and not `rplidar`. 
+PyCharm show the problem "Unsatisfied package requirement inspection"...
+
+> Because in file `requirements.txt` is written `rplidar-roboticia` and not `rplidar`. 
 > See [PyPi page](https://pypi.org/project/rplidar-roboticia/).
 > Since RPLidar hardware is shipping with firmware >= 1.29 the usage of `$ pip3 install rplidar` will no more work! 
 > Please ignore such problem information.
