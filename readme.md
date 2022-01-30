@@ -2,13 +2,19 @@
 
 ## Setup
 
+**Clone Repository**
+
 ```shell
 # clone repository
-$ git clone ...
+$ git clone https://github.com/Lupin3000/RPLidar.git
 
 # change directory
-$ cd ...
+$ cd RPLidar/
+```
 
+**Create virtualenv (_for Python 3.x_)**
+
+```shell
 # create virtualenv
 $ virtualenv -p python3 venv
 
