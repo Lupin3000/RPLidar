@@ -16,6 +16,12 @@ Examples:
 - /dev/ttyUSB0 (_Linux_)
 - /dev/tty.usbserial-0001 (_macOS_)
 
+Additional documents are available:
+
+- [A1M8 Datasheet](https://bucket-download.slamtec.com/d1e428e7efbdcd65a8ea111061794fb8d4ccd3a0/LD108_SLAMTEC_rplidar_datasheet_A1M8_v3.0_en.pdf)
+- [A1M8 Dev Kit User Manual](https://bucket-download.slamtec.com/269e60a69933dffb1067a2ee3405f2918168064a/LM108_SLAMTEC_rplidarkit_usermanual_A1M8_v2.1_en.pdf)
+- [Protocol](https://bucket-download.slamtec.com/f010c72be308cdc618e91746d643278185ed02b2/LR001_SLAMTEC_rplidar_protocol_v2.2_en.pdf)
+
 ## Setup
 
 **Clone Repository**
@@ -90,12 +96,15 @@ $ . venv/bin/activate
 
 > [Error] Could not found device: /dev/tty.usbserial-0001
 
-Make sure the rplidar is properly connected via USP and visible.
+Make sure the RPLIDAR is properly connected via USP and visible.
 
 ```shell
 # list all /dev/tty devices and grep for USB
 $ ls -la /dev/tty* | grep -i USB
+crw-rw-rw-  1 root   wheel   0x9000004 Jan 30 17:25 /dev/tty.usbserial-0001
 ```
+
+No (_similar_) output means that something went wrong. Please check all connections!
 
 **Linux**
 
