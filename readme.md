@@ -86,6 +86,17 @@ $ . venv/bin/activate
 
 ## Error
 
+**General**
+
+> [Error] Could not found device: /dev/tty.usbserial-0001
+
+Make sure the rplidar is properly connected via USP and visible.
+
+```shell
+# list all /dev/tty devices and grep for USB
+$ ls -la /dev/tty* | grep -i USB
+```
+
 **Linux**
 
 > Root privilege is needed to access the ttyUSB device under Linux. Following quick and dirty solution can help or add KERNEL=="ttyUSB*", MODE="0666" to the configuration of udev, and reboot.
