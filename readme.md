@@ -158,3 +158,6 @@ The matplotlib animation does print only static...
 
 > I have no idea ... just assumptions. 
 > I developed and tested the code (_directly via USB_) on macOS Monterey Version 12.1 and there it works.
+> Here is the evidence recorded as video and convert to gif.
+
+![screen-gif](./rplidar.gif)
