@@ -117,9 +117,10 @@ $ . venv/bin/activate
 
 **General**
 
-> [Error] Could not found device: /dev/tty.usbserial-0001
+[Error] Could not found device: /dev/tty.usbserial-0001...
 
-Make sure the RPLIDAR is properly connected via USP and visible.
+> Make sure the RPLIDAR is properly connected via USP and visible.
+> No (_similar_) output means that something went wrong. Please check all connections!
 
 ```shell
 # list all /dev/tty devices and grep for USB
@@ -127,11 +128,12 @@ $ ls -la /dev/tty* | grep -i USB
 crw-rw-rw-  1 root   wheel   0x9000004 Jan 30 17:25 /dev/tty.usbserial-0001
 ```
 
-No (_similar_) output means that something went wrong. Please check all connections!
-
 **Linux**
 
-> Root privilege is needed to access the ttyUSB device under Linux. Following quick and dirty solution can help or add KERNEL=="ttyUSB*", MODE="0666" to the configuration of udev, and reboot.
+Cannot read from /dev/ttyUSB0...
+
+> Root privilege is needed to access the ttyUSB device under Linux.
+> Following quick and dirty solution can help or add KERNEL=="ttyUSB*", MODE="0666" to the configuration of udev, and reboot.
 
 ```shell
 # list device and permissions
@@ -143,12 +145,14 @@ $ sudo chmod 0666 /dev/ttyUSB0
 
 **PyCharm**
 
-> Some IDE like PyCharm show the problem "Unsatisfied package requirement inspection" because in file `requirements.txt` is written `rplidar-roboticia` and not `rplidar`. See [PyPi page](https://pypi.org/project/rplidar-roboticia/).
-
-Since RPLidar hardware is shipping with firmware >= 1.29 the usage of `$ pip3 install rplidar` will no more work! Please ignore such problem information.
+> Some IDE like PyCharm show the problem "Unsatisfied package requirement inspection" because in file `requirements.txt` is written `rplidar-roboticia` and not `rplidar`. 
+> See [PyPi page](https://pypi.org/project/rplidar-roboticia/).
+> Since RPLidar hardware is shipping with firmware >= 1.29 the usage of `$ pip3 install rplidar` will no more work! 
+> Please ignore such problem information.
 
 **Plot animation don't work**
 
-> I have no idea ... just assumptions.
+The matplotlib animation does print only static... 
 
-I developed and tested the code (_directly via USB_) on macOS Monterey Version 12.1 and there it works.
+> I have no idea ... just assumptions. 
+> I developed and tested the code (_directly via USB_) on macOS Monterey Version 12.1 and there it works.
