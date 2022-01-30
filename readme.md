@@ -1,6 +1,6 @@
 # RPLidar A1M8
 
-The Python3 scripts run on Linux, macOS and Windows.
+The Python3 scripts for [RPLIDAR A1](https://www.slamtec.com/en/Lidar/A1) run on Linux, macOS and Windows.
 
 Examples:
 
@@ -71,6 +71,8 @@ $ . venv/bin/activate
 ```
 
 ## Error
+
+**Linux**
 
 > Root privilege is needed to access the ttyUSB device under Linux. Following quick and dirty solution can help or add KERNEL=="ttyUSB*", MODE="0666" to the configuration of udev, and reboot.
 
