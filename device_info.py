@@ -37,6 +37,8 @@ def run():
 
         print('*' * 50)
 
+        lidar.stop()
+        lidar.stop_motor()
         lidar.disconnect()
     else:
         print('[Error] Could not found device: {0}'.format(dev_path))

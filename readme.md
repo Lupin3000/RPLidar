@@ -64,11 +64,11 @@ $ . venv/bin/activate
 # show script help
 (venv) $ python3 device_measurement.py -h
 
-# display rplidar measurements (macOS)
-(venv) $ python3 device_measurement.py '/dev/tty.usbserial-0001'
-
 # display rplidar measurements (Linux)
 (venv) $ python3 device_measurement.py '/dev/ttyUSB0'
+
+# display rplidar measurements without any other output (macOS)
+(venv) $ python3 device_measurement.py /dev/tty.usbserial-0001 --raw
 ```
 
 **Stop virtualenv**
