@@ -64,6 +64,19 @@ $ . venv/bin/activate
 (venv) $ python3 device_info.py '/dev/ttyUSB0'
 ```
 
+**Display Speed Information**
+
+```shell
+# show script help
+(venv) $ python3 device_speed.py -h
+
+# display rplidar speed information (macOS)
+(venv) $ python3 device_speed.py /dev/tty.usbserial-0001
+
+# display rplidar speed information (Linux)
+(venv) $ python3 device_speed.py /dev/ttyUSB0
+```
+
 **Display Measurements on Terminal**
 
 ```shell
@@ -120,6 +133,6 @@ $ sudo chmod 0666 /dev/ttyUSB0
 
 **PyCharm**
 
-> Some IDE like PyCharm show the problem "Unsatisfied package requirement inspection" because in file `requirements.txt` is written `rplidar-roboticia` and not `rplidar`.
+> Some IDE like PyCharm show the problem "Unsatisfied package requirement inspection" because in file `requirements.txt` is written `rplidar-roboticia` and not `rplidar`. See [PyPi page](https://pypi.org/project/rplidar-roboticia/).
 
 Since RPLidar hardware is shipping with firmware >= 1.29 the usage of `$ pip3 install rplidar` will no more work! Please ignore such problem information.
