@@ -6,7 +6,9 @@ You can adapt, improve and use the code for your projects as you wish. The autho
 
 ## Information
 
-The Python3 scripts for [RPLIDAR A1](https://www.slamtec.com/en/Lidar/A1) run on Linux, macOS and Windows. Latest rplidar documentation can be found [here](https://rplidar.readthedocs.io/en/latest/).
+The Python3 scripts for [RPLIDAR A1](https://www.slamtec.com/en/Lidar/A1) run on Linux, macOS and Windows. 
+Latest rplidar documentation can be found [here](https://rplidar.readthedocs.io/en/latest/). 
+If you prefer C++, please have a look [here](https://github.com/slamtec/rplidar_sdk).
 
 Examples:
 
