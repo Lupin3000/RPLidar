@@ -146,3 +146,9 @@ $ sudo chmod 0666 /dev/ttyUSB0
 > Some IDE like PyCharm show the problem "Unsatisfied package requirement inspection" because in file `requirements.txt` is written `rplidar-roboticia` and not `rplidar`. See [PyPi page](https://pypi.org/project/rplidar-roboticia/).
 
 Since RPLidar hardware is shipping with firmware >= 1.29 the usage of `$ pip3 install rplidar` will no more work! Please ignore such problem information.
+
+**Plot animation don't work**
+
+> I have no idea ... just assumptions.
+
+I developed and tested the code (_directly via USB_) on macOS Monterey Version 12.1 and there it works.
