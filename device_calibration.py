@@ -16,18 +16,18 @@ class PrintColor:
     END = '\033[1;37;0m'
 
 
-def find_front(value):
+def find_zero_front(angle, distance):
     min_range = range(0, 10)
     max_range = range(350, 360)
 
-    if value[2] == 0:
-        print(PrintColor.YELLOW + "angle: {} distance: {} millimeter".format(value[2], value[3]) + PrintColor.END)
+    if int(angle) == 0:
+        print(PrintColor.YELLOW + "angle: 0 distance: {} millimeter".format(distance) + PrintColor.END)
 
-    if value[2] in min_range:
-        print(PrintColor.BLUE + "angle: {} distance: {} millimeter".format(value[2], value[3]) + PrintColor.END)
+    if int(angle) in min_range:
+        print(PrintColor.BLUE + "angle: {:.2f} distance: {} millimeter".format(angle, distance) + PrintColor.END)
 
-    if value[2] in max_range:
-        print(PrintColor.PURPLE + "angle: {} distance: {} millimeter".format(value[2], value[3]) + PrintColor.END)
+    if int(angle) in max_range:
+        print(PrintColor.PURPLE + "angle: {:.2f} distance: {} millimeter".format(angle, distance) + PrintColor.END)
 
 
 def run():
@@ -43,7 +43,7 @@ def run():
         try:
             for val in lidar.iter_measures():
                 if val[3] != 0:
-                    find_front(val)
+                    find_zero_front(val[2], val[3])
         except KeyboardInterrupt:
             lidar.stop()
             lidar.stop_motor()
