@@ -108,6 +108,11 @@ $ . venv/bin/activate
 
 **Calibration**
 
+> Calibration from 350 to 10
+> Purple output from 350 to 360.n
+> Yellow output for exact 0
+> Blue output from 0.n to 10
+
 ```shell
 # show script help
 (venv) $ python3 device_calibration.py -h
