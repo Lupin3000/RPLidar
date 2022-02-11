@@ -106,6 +106,20 @@ $ . venv/bin/activate
 (venv) $ python3 device_plot.py /dev/tty.usbserial-0001
 ```
 
+**Calibration**
+
+```shell
+# show script help
+(venv) $ python3 device_calibration.py -h
+
+# output in terminal (macOS)
+(venv) $ python3 device_calibration.py /dev/tty.usbserial-0001
+```
+
+_Example output:_
+
+![example calibration](src/calibration.png)
+
 **Stop virtualenv**
 
 ```shell
@@ -160,4 +174,4 @@ The matplotlib animation does print only static...
 > I developed and tested the code (_directly via USB_) on macOS Monterey Version 12.1 and there it works.
 > Here is the evidence recorded as video and convert to gif.
 
-![screen-gif](./rplidar.gif)
+![screen-gif](src/rplidar.gif)
